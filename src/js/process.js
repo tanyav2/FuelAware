@@ -17,10 +17,10 @@ console.log("To location "+ to_location);
 console.log("From location "+ from_location);
 
 function intiliazeData(data) {
-  fuel_consumption = data.fuel_consumption;
-  fuel_level = data.fuel_level;
-  fuel_economic_lifetime = data.fuel_economic_lifetime;
-  fuel_capacity = data.fuel_capacity;
+  fuel_consumption = data.fuel_consumption; //ltrs/hr
+  fuel_level = data.fuel_level; //% of full
+  fuel_economic_lifetime = data.fuel_economic_lifetime; //km/lit
+  fuel_capacity = data.fuel_capacity; // ltrs
 }
 function processData(data) {
   console.log("Avergae speed "+ data.average_speed);
