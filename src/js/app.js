@@ -1,6 +1,6 @@
 function autoComplete(el){
-  var x = el.value
-	console.log(el.value);
+  to_location = el.value
+  console.log(el.value);
 
   $( function() {
     var availableTags = [
@@ -31,14 +31,13 @@ function autoComplete(el){
       source: availableTags
     });
   } );
-	//var x = document.createElement("div")
-	//document.appendChild(x)
 };
 
 $(document).ready(function(){
   $("#myText").keyup(function(e) {
     if(e.which == 13) {
-        console.log("Now EXIT!!!");
+        console.log("Now EXIT!!!" + to_location);
+        window.location.replace("index_2.html?location=" + to_location);
     }
   });
 });
