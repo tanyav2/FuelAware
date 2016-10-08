@@ -1,5 +1,5 @@
-function autoComplete(el){
-  to_location = el.value
+function autoComplete(el) {
+  to_location = el.value;
   console.log(el.value);
 
   $( function() {
@@ -13,19 +13,7 @@ function autoComplete(el){
       "Clojure",
       "COBOL",
       "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
+      "Erlang"
     ];
     $( "#myText" ).autocomplete({
       source: availableTags
