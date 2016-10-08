@@ -9,6 +9,7 @@
 
     <!-- Your custom files -->
     <link rel="stylesheet" href="css/app.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
     <script src="GMLIB/info.js"></script>
     <script src="GMLIB/system.js"></script>
@@ -27,30 +28,20 @@
 
   </head>
   <body>
-    <div id="wrapper">
-      <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
-      <div id="main">
-
-        <!-- Remove all code inside #main and add your own! -->
-
-        <h1>ETAFuel</h1>
-        <label>Enter location: </label>
-        <input id = "myText" type = "text"/>
-        <br>
-
-        <br>
-        <input type = "button" value = "OK" onclick="myFunction();"/>
-        &nbsp;
-        &nbsp;
-        <input type = "button" value = "Cancel" onclick="myFunction2();"/>
-
-
-
+    <div id="wrapper" class="full-container">
+      <div class="title-bar">
+        <div class="title">
+        ETAFuel
+        </div>
+        <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
       </div>
+      <div id="main">
+        <div class="loc-text">Enter location:</div>
+        <input class='loc-input' id = "myText" type = "text" onclick='autoComplete(this)'/>
+      </div>
+
+
     </div>
-
     <!-- Your app code: -->
-
-
   </body>
 </html>
