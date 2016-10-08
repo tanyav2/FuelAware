@@ -1,10 +1,5 @@
-// Your code goes here
-function myFunction(){
-        x = document.getElementById("myText");
-      }
-
-
 function autoComplete(el){
+  var x = el.value
 	console.log(el.value);
 
   $( function() {
@@ -36,7 +31,14 @@ function autoComplete(el){
       source: availableTags
     });
   } );
-
 	//var x = document.createElement("div")
 	//document.appendChild(x)
-}
+};
+
+$(document).ready(function(){
+  $("#myText").keyup(function(e) {
+    if(e.which == 13) {
+        console.log("Now EXIT!!!");
+    }
+  });
+});
