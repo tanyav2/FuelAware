@@ -48,6 +48,9 @@ function processData(data) {
 
   console.log("% of fuel left " + percentFuelLeft);
 
+  var elem = document.getElementById("myBarMeter");
+  elem.style.width = percentFuelLeft + "%";
+
   console.log("Rate of consumption" + rateOfConsumption(data.average_speed));
 
 	var tLeft = timeLeft(fuel_capacity, percentFuelLeft, data.average_speed);
