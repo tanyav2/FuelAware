@@ -24,7 +24,7 @@ function rateOfConsumption(avg_speed) {
 function timeLeft(fuel_capacity, percentFuelLeft, avg_speed) {
 	var time;
 	time = (fuel_capacity * (percentFuelLeft/100)) / rateOfConsumption(avg_speed);//all are mulptiplied
-  return time/36000;
+  return time;
 }
 
 function optimal() {
@@ -49,13 +49,15 @@ function processData(data) {
   console.log("% of fuel left " + percentFuelLeft);
 
   var elem = document.getElementById("myBarMeter");
-  elem.style.width = percentFuelLeft + "%";
+  elem.style.width = Math.round(percentFuelLeft) + "%";
+  document.getElementById("demo").innerHTML = Math.round(percentFuelLeft) + "%";
 
   console.log("Rate of consumption" + rateOfConsumption(data.average_speed));
 
 	var tLeft = timeLeft(fuel_capacity, percentFuelLeft, data.average_speed);
 
-  document.getElementById("timLeft").innerHTML = "Time you can drive your car:" + tLeft;
+  document.getElementById("timeLeft").innerHTML = "Time you can drive your car: " + Math.round(tLeft) + "";
+
 
   console.log("Time left" + tLeft);
 }

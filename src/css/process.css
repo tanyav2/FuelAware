@@ -16,7 +16,6 @@
   width:75%;
   height:28px;
   background-color:#e0e0eb;
-
 }
 
 .progressbarMeter {
@@ -24,7 +23,7 @@
   -webkit-border-radius: 0.4em;
   top:0px;
   left:0px;
-  width:0%;
+  width:100%;
   height:28px;
   background-color:#ff6600;
 
@@ -68,4 +67,26 @@
   font-size: 25px;
   display: inline;
   border-radius: 25px;
+}
+
+.container {
+  position:absolute;
+  top:-5px;
+  left:275px;
+
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+  display: inline;
+	border-radius: 25px;
+}
+
+.timeness {
+  position: absolute;
+  top:275px;
+  left:200px;
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+  display: inline;
+  border-radius: 25px;
+
 }

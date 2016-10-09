@@ -4,16 +4,13 @@ function autoComplete(el) {
 
   $( function() {
     var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang"
+      "Thomas M. Siebel Center for Computer Science, North Goodwin Avenue, Urbana, IL",
+      "Wohlers Hall, South 6th Street, Champaign, IL",
+      "Lincoln Hall, South Wright Street, Urbana, IL",
+      "Masonic Temple Theater, Temple Street, Detroit, MI",
+      "Detroit Metropolitan Wayne County Airport, Detroit, MI",
+      "Detroit Institute of Arts - Catering, Woodward Avenue, Detroit, MI",
+      ""
     ];
     $( "#myText" ).autocomplete({
       source: availableTags
