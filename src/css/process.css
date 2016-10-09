@@ -32,7 +32,7 @@
 
 .timeleft {
   position:absolute;
-  top:300px;
+  top:275px;
   left:10px;
   font-family: 'Bree Serif', serif;
   font-size: 25px;
@@ -42,8 +42,28 @@
 
 .mostopt {
   position:absolute;
-  top:400px;
+  top:340px;
   left:10px;
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+  display: inline;
+  border-radius: 25px;
+}
+
+.neargas {
+  position: absolute;
+  top: 410px;
+  left: 10px;
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+  display: inline;
+  border-radius: 25px;
+}
+
+.nearest {
+  position: absolute;
+  top: 410px;
+  left: 250px;
   font-family: 'Bree Serif', serif;
   font-size: 25px;
   display: inline;
