@@ -27,3 +27,14 @@
   display: inline;
   border-radius: 25px;
 }
+
+.backtothebeginning {
+  position: absolute;
+  top: 400px;
+  left: 20px;
+  font-family: 'Bree Serif', serif;
+  font-size: 15px;
+  display: inline;
+  border-radius: 25px;
+
+}
