@@ -29,3 +29,23 @@
   background-color:#ff6600;
 
 }
+
+.timeleft {
+  position:absolute;
+  top:300px;
+  left:10px;
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+  display: inline;
+  border-radius: 25px;
+}
+
+.mostopt {
+  position:absolute;
+  top:400px;
+  left:10px;
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+  display: inline;
+  border-radius: 25px;
+}

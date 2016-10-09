@@ -55,6 +55,8 @@ function processData(data) {
 
 	var tLeft = timeLeft(fuel_capacity, percentFuelLeft, data.average_speed);
 
+  document.getElementById("timLeft").innerHTML = "Time you can drive your car:" + tLeft;
+
   console.log("Time left" + tLeft);
 }
 
